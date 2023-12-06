@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3NO MENU</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            background: #000;
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: 0.8s all ease-in-out;
+        }
+        .head-title {
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .container {
+            width: 100%;
+            border-bottom: 10px solid #FFB920;
+        }
+
+        .container div img {
+            width: 100%;
+        }
+        .shop-logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            border-bottom: 10px solid #FFB920;
+            margin-bottom: 10px;
+        }
+        .shop-logo h2 {
+            color: white;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: 0.8s all ease;
+        }
+        .shop-logo img {
+            height: 100px;
+        }
+    </style>
+
+    <div class="shop-logo">
+        <h2>Premium</h2>
+        <img src="logo.jpg" alt="">
+        <h2>Beens</h2>
+    </div>
+    <div class="container">
+        <div class="first-image">
+            <img src="first_image.jpg" alt="">
+        </div>
+        <br>
+        <div class="secound-image">
+            <img src="secound_image.jpg" alt="">
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    // After the page loads, add a class to trigger the fade-in effect
+    window.addEventListener('load', function() {
+      var content = document.querySelector('body');
+      var slogan = document.querySelector('h2');
+      setTimeout(() => {
+        content.style.opacity = 1;
+        content.style.transform = 'translateX(0%)';
+      }, 0);
+
+    setTimeout(() => {
+        slogan.style.letterSpacing = '5px';
+      }, 800);
+    });
+  </script>
+
+</html>
